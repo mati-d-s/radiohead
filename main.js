@@ -82,13 +82,46 @@ function showSection(section) {
     } else if (section === 'tourdate') {
         content.innerHTML = `
             <h2 class="text-3xl font-bold mb-6 text-gray-800">Gira Latinoamericana</h2>
-            <ul class="space-y-4 text-lg text-gray-700">
-                <li><strong>Buenos Aires, Argentina</strong> - 10 de octubre de 2024</li>
-                <li><strong>Santiago, Chile</strong> - 12 de octubre de 2024</li>
-                <li><strong>Lima, Perú</strong> - 14 de octubre de 2024</li>
-                <li><strong>Ciudad de México, México</strong> - 16 de octubre de 2024</li>
-            </ul>
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <ul class="space-y-4 text-lg text-gray-700">
+                    <li class="flex justify-between items-center transition-transform transform hover:scale-105">
+                        <span><strong>Buenos Aires, Argentina</strong> - 10 de octubre de 2024</span>
+                        <button class="bg-blue-500 text-white font-semibold px-4 py-2 rounded hover:bg-blue-600 transition duration-300 transform hover:translate-y-1">Comprar</button>
+                    </li>
+                    <li class="flex justify-between items-center transition-transform transform hover:scale-105">
+                        <span><strong>Santiago, Chile</strong> - 12 de octubre de 2024</span>
+                        <button class="bg-blue-500 text-white font-semibold px-4 py-2 rounded hover:bg-blue-600 transition duration-300 transform hover:translate-y-1">Comprar</button>
+                    </li>
+                    <li class="flex justify-between items-center transition-transform transform hover:scale-105">
+                        <span><strong>Lima, Perú</strong> - 14 de octubre de 2024</span>
+                        <button class="bg-blue-500 text-white font-semibold px-4 py-2 rounded hover:bg-blue-600 transition duration-300 transform hover:translate-y-1">Comprar</button>
+                    </li>
+                    <li class="flex justify-between items-center transition-transform transform hover:scale-105">
+                        <span><strong>Ciudad de México, México</strong> - 16 de octubre de 2024</span>
+                        <button class="bg-blue-500 text-white font-semibold px-4 py-2 rounded hover:bg-blue-600 transition duration-300 transform hover:translate-y-1">Comprar</button>
+                    </li>
+                    <li class="flex justify-between items-center transition-transform transform hover:scale-105">
+                        <span><strong>Medellín, Colombia</strong> - 18 de octubre de 2024</span>
+                        <button class="bg-blue-500 text-white font-semibold px-4 py-2 rounded hover:bg-blue-600 transition duration-300 transform hover:translate-y-1">Comprar</button>
+                    </li>
+                    <li class="flex justify-between items-center transition-transform transform hover:scale-105">
+                        <span><strong>Quito, Ecuador</strong> - 20 de octubre de 2024</span>
+                        <button class="bg-blue-500 text-white font-semibold px-4 py-2 rounded hover:bg-blue-600 transition duration-300 transform hover:translate-y-1">Comprar</button>
+                    </li>
+                    <li class="flex justify-between items-center transition-transform transform hover:scale-105">
+                        <span><strong>Asunción, Paraguay</strong> - 22 de octubre de 2024</span>
+                        <button class="bg-blue-500 text-white font-semibold px-4 py-2 rounded hover:bg-blue-600 transition duration-300 transform hover:translate-y-1">Comprar</button>
+                    </li>
+                    <li class="flex justify-between items-center transition-transform transform hover:scale-105">
+                        <span><strong>La Paz, Bolivia</strong> - 24 de octubre de 2024</span>
+                        <button class="bg-blue-500 text-white font-semibold px-4 py-2 rounded hover:bg-blue-600 transition duration-300 transform hover:translate-y-1">Comprar</button>
+                    </li>
+                </ul>
+            </div>
         `;
+    
+    
+    
     } else if (section === 'agregar') {
         content.innerHTML = `
             <h2 class="text-3xl font-bold mb-6 text-gray-800">Agregar Álbum</h2>
