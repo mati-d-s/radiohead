@@ -19,66 +19,18 @@ function showSection(section) {
     } else if (section === 'discografia') {
         content.innerHTML = `
             <h2 class="text-3xl font-bold mb-6 text-gray-800">Discografía de Radiohead</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="bg-white rounded-lg shadow-lg hover:shadow-xl transition duration-300 p-6 transform hover:scale-105">
-                    <img src="https://upload.wikimedia.org/wikipedia/en/0/0f/Radiohead.pablohoney.albumart.jpg" alt="Pablo Honey" class="rounded-lg mb-4 shadow-lg">
-                    <h3 class="font-bold text-xl mb-2 text-gray-800">Pablo Honey</h3>
-                    <p class="text-gray-600">Año: 1993</p>
-                    <p class="text-gray-600">El álbum debut de la banda, con un sonido más grunge y alternativo, incluye su éxito más conocido, "Creep".</p>
-                </div>
-                <div class="bg-white rounded-lg shadow-lg hover:shadow-xl transition duration-300 p-6 transform hover:scale-105">
-                    <img src="https://upload.wikimedia.org/wikipedia/en/5/55/Radioheadthebends.png" alt="The Bends" class="rounded-lg mb-4 shadow-lg">
-                    <h3 class="font-bold text-xl mb-2 text-gray-800">The Bends</h3>
-                    <p class="text-gray-600">Año: 1995</p>
-                    <p class="text-gray-600">Un álbum que consolidó a Radiohead como una de las bandas más importantes de los años 90, con temas como "Fake Plastic Trees" y "Street Spirit".</p>
-                </div>
-                <div class="bg-white rounded-lg shadow-lg hover:shadow-xl transition duration-300 p-6 transform hover:scale-105">
-                    <img src="https://upload.wikimedia.org/wikipedia/en/b/ba/Radioheadokcomputer.png" alt="OK Computer" class="rounded-lg mb-4 shadow-lg">
-                    <h3 class="font-bold text-xl mb-2 text-gray-800">OK Computer</h3>
-                    <p class="text-gray-600">Año: 1997</p>
-                    <p class="text-gray-600">Un álbum icónico que mezcla el rock alternativo con sonidos electrónicos. Considerado uno de los mejores álbumes de todos los tiempos.</p>
-                </div>
-                <div class="bg-white rounded-lg shadow-lg hover:shadow-xl transition duration-300 p-6 transform hover:scale-105">
-                    <img src="https://upload.wikimedia.org/wikipedia/en/0/02/Radioheadkida.png" alt="Kid A" class="rounded-lg mb-4 shadow-lg">
-                    <h3 class="font-bold text-xl mb-2 text-gray-800">Kid A</h3>
-                    <p class="text-gray-600">Año: 2000</p>
-                    <p class="text-gray-600">Este álbum marcó una nueva dirección para Radiohead, con un sonido más experimental y electrónico, alejándose del rock tradicional.</p>
-                </div>
-                <div class="bg-white rounded-lg shadow-lg hover:shadow-xl transition duration-300 p-6 transform hover:scale-105">
-                    <img src="https://upload.wikimedia.org/wikipedia/en/8/8c/Radiohead_-_Amnesiac_cover.png" alt="Amnesiac" class="rounded-lg mb-4 shadow-lg">
-                    <h3 class="font-bold text-xl mb-2 text-gray-800">Amnesiac</h3>
-                    <p class="text-gray-600">Año: 2001</p>
-                    <p class="text-gray-600">Considerado una continuación de Kid A, este álbum sigue explorando terrenos electrónicos, con una atmósfera más oscura y experimental.</p>
-                </div>
-                <div class="bg-white rounded-lg shadow-lg hover:shadow-xl transition duration-300 p-6 transform hover:scale-105">
-                    <img src="https://upload.wikimedia.org/wikipedia/en/6/61/Radioheadhailtothethief.png" alt="Hail to the Thief" class="rounded-lg mb-4 shadow-lg">
-                    <h3 class="font-bold text-xl mb-2 text-gray-800">Hail to the Thief</h3>
-                    <p class="text-gray-600">Año: 2003</p>
-                    <p class="text-gray-600">Este álbum es una mezcla de su fase experimental y su antiguo estilo de rock, con letras políticamente cargadas.</p>
-                </div>
-                <div class="bg-white rounded-lg shadow-lg hover:shadow-xl transition duration-300 p-6 transform hover:scale-105">
-                    <img src="https://upload.wikimedia.org/wikipedia/en/a/a2/Radioheadthekingoflimbs.png" alt="The King of Limbs" class="rounded-lg mb-4 shadow-lg">
-                    <h3 class="font-bold text-xl mb-2 text-gray-800">The King of Limbs</h3>
-                    <p class="text-gray-600">Año: 2011</p>
-                    <p class="text-gray-600">Radiohead sigue su camino experimental con un álbum más centrado en los ritmos y la repetición, con un ambiente denso y minimalista.</p>
-                </div>
-                <div class="bg-white rounded-lg shadow-lg hover:shadow-xl transition duration-300 p-6 transform hover:scale-105">
-                    <img src="https://upload.wikimedia.org/wikipedia/en/6/6a/Amoonshapedpool.png" alt="A Moon Shaped Pool" class="rounded-lg mb-4 shadow-lg">
-                    <h3 class="font-bold text-xl mb-2 text-gray-800">A Moon Shaped Pool</h3>
-                    <p class="text-gray-600">Año: 2016</p>
-                    <p class="text-gray-600">Con una mezcla de orquestación y minimalismo, este álbum es emotivo y atmosférico, marcando el regreso de Radiohead tras varios años de silencio.</p>
-                </div>
-                <div class="bg-white rounded-lg shadow-lg hover:shadow-xl transition duration-300 p-6 transform hover:scale-105">
-                    <img src="https://upload.wikimedia.org/wikipedia/en/1/14/Inrainbowscover.png" alt="In Rainbows" class="rounded-lg mb-4 shadow-lg">
-                    <h3 class="font-bold text-xl mb-2 text-gray-800">In Rainbows</h3>
-                    <p class="text-gray-600">Año: 2007</p>
-                    <p class="text-gray-600">In Rainbows es un álbum que se lanzó con un modelo de pago "lo que quieras", combinando melodías suaves con complejidad emocional y sonora.</p>
-                </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6" id="album-list">
+                ${generateAlbumCard("Pablo Honey", "1993", "El álbum debut de la banda, con un sonido más grunge y alternativo, incluye su éxito más conocido, 'Creep'.", "https://upload.wikimedia.org/wikipedia/en/0/0f/Radiohead.pablohoney.albumart.jpg")}
+                ${generateAlbumCard("The Bends", "1995", "Un álbum que consolidó a Radiohead como una de las bandas más importantes de los años 90, con temas como 'Fake Plastic Trees' y 'Street Spirit'.", "https://upload.wikimedia.org/wikipedia/en/5/55/Radioheadthebends.png")}
+                ${generateAlbumCard("OK Computer", "1997", "Un álbum icónico que mezcla el rock alternativo con sonidos electrónicos. Considerado uno de los mejores álbumes de todos los tiempos.", "https://upload.wikimedia.org/wikipedia/en/b/ba/Radioheadokcomputer.png")}
+                ${generateAlbumCard("Kid A", "2000", "Este álbum marcó una nueva dirección para Radiohead, con un sonido más experimental y electrónico, alejándose del rock tradicional.", "https://upload.wikimedia.org/wikipedia/en/0/02/Radioheadkida.png")}
+                ${generateAlbumCard("Amnesiac", "2001", "Considerado una continuación de Kid A, este álbum sigue explorando terrenos electrónicos, con una atmósfera más oscura y experimental.", "https://upload.wikimedia.org/wikipedia/en/8/8c/Radiohead_-_Amnesiac_cover.png")}
+                ${generateAlbumCard("Hail to the Thief", "2003", "Este álbum es una mezcla de su fase experimental y su antiguo estilo de rock, con letras políticamente cargadas.", "https://upload.wikimedia.org/wikipedia/en/6/61/Radioheadhailtothethief.png")}
+                ${generateAlbumCard("The King of Limbs", "2011", "Radiohead sigue su camino experimental con un álbum más centrado en los ritmos y la repetición, con un ambiente denso y minimalista.", "https://upload.wikimedia.org/wikipedia/en/a/a2/Radioheadthekingoflimbs.png")}
+                ${generateAlbumCard("In Rainbows", "2007", "In Rainbows es un álbum que se lanzó con un modelo de pago 'lo que quieras', combinando melodías suaves con complejidad emocional y sonora.", "https://upload.wikimedia.org/wikipedia/en/1/14/Inrainbowscover.png")}
+                ${generateAlbumCard("A Moon Shaped Pool", "2016", "Con una mezcla de orquestación y minimalismo, este álbum es emotivo y atmosférico, marcando el regreso de Radiohead tras varios años de silencio.", "https://upload.wikimedia.org/wikipedia/en/6/6a/Amoonshapedpool.png")}
             </div>
         `;
-    
-        
-      
     } else if (section === 'tourdate') {
         content.innerHTML = `
             <h2 class="text-3xl font-bold mb-6 text-gray-800">Gira Latinoamericana</h2>
@@ -119,9 +71,6 @@ function showSection(section) {
                 </ul>
             </div>
         `;
-    
-    
-    
     } else if (section === 'agregar') {
         content.innerHTML = `
             <h2 class="text-3xl font-bold mb-6 text-gray-800">Agregar Álbum</h2>
@@ -134,9 +83,43 @@ function showSection(section) {
                     <label for="release-year" class="block text-lg text-gray-700">Año de Lanzamiento</label>
                     <input type="text" id="release-year" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 transition duration-300">
                 </div>
-                <button type="button" class="w-full py-3 bg-green-600 text-white rounded-lg shadow-lg hover:bg-green-500 transition duration-300">Agregar</button>
+                <button type="button" class="w-full py-3 bg-green-600 text-white rounded-lg shadow-lg hover:bg-green-500 transition duration-300" onclick="addAlbum()">Agregar</button>
             </form>
         `;
+    }
+}
+
+function generateAlbumCard(title, year, description, imgSrc) {
+    return `
+        <div class="bg-white rounded-lg shadow-lg hover:shadow-xl transition duration-300 p-6 transform hover:scale-105 relative">
+            <img src="${imgSrc}" alt="${title}" class="rounded-lg mb-4 shadow-lg">
+            <h3 class="font-bold text-xl mb-2 text-gray-800">${title}</h3>
+            <p class="text-gray-600">Año: ${year}</p>
+            <p class="text-gray-600">${description}</p>
+            <button class="bg-red-500 text-white font-semibold px-4 py-2 rounded hover:bg-red-600 transition duration-300 absolute top-4 right-4" onclick="removeAlbum(this)">Eliminar</button>
+        </div>
+    `;
+}
+
+function removeAlbum(button) {
+    const card = button.closest('div');
+    card.remove();
+}
+
+function addAlbum() {
+    const albumName = document.getElementById('album-name').value;
+    const releaseYear = document.getElementById('release-year').value;
+
+    if (albumName && releaseYear) {
+        const newAlbumCard = generateAlbumCard(albumName, releaseYear, "Descripción personalizada", "URL_de_imagen");
+        const albumList = document.getElementById('album-list');
+        albumList.innerHTML += newAlbumCard;
+
+        // Limpiar los campos
+        document.getElementById('album-name').value = '';
+        document.getElementById('release-year').value = '';
+    } else {
+        alert('Por favor, completa todos los campos.');
     }
 }
 
