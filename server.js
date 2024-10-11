@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 3000;
 app.use(express.json());
 
 // Conectar a MongoDB usando Mongoose
-mongoose.connect('mongodb+srv://<db_iblis515>:<db_Siouxsie1>@cluster0.zdtmn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', { // Cambia esto por tu URI de MongoDB
+mongoose.connect('mongodb+srv://matiasssoto:fkQ4NAPOUhpMQtVC@cluster0.zdtmn.mongodb.net/radiohead?retryWrites=true&w=majority&appName=Cluster0', { // Cambia esto por tu URI de MongoDB
     useNewUrlParser: true,
     useUnifiedTopology: true,
 })
