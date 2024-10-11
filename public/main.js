@@ -86,6 +86,42 @@ function showSection(section) {
                 <button type="button" class="w-full py-3 bg-green-600 text-white rounded-lg shadow-lg hover:bg-green-500 transition duration-300" onclick="addAlbum()">Agregar</button>
             </form>
         `;
+
+    } else if (section === 'form') {
+        content.innerHTML = 
+            `<h2 class="text-3xl font-bold mb-6 text-gray-800">Formulario de Contacto</h2>
+            <form onsubmit="validateForm(event)" class="space-y-6 max-w-md mx-auto">
+                <div>
+                    <label for="full-name" class="block text-lg text-gray-700">Nombre y Apellido</label>
+                    <input type="text" id="full-name" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 transition duration-300" required>
+                </div>
+                <div>
+                    <label for="email" class="block text-lg text-gray-700">Correo Electrónico</label>
+                    <input type="email" id="email" placeholder="correo@example.com" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 transition duration-300" required>
+                </div>
+                <div class="space-y-1">
+                    <label class="block text-lg text-gray-700">Género</label>
+                    <label><input type="radio" name="gender" value="femenino" required> Femenino</label>
+                    <label><input type="radio" name="gender" value="masculino"> Masculino</label>
+                    <label><input type="radio" name="gender" value="no-binario"> No Binario</label>
+                    <label><input type="radio" name="gender" value="prefiero-no-decirlo"> Prefiero no decirlo</label>
+                </div>
+                <div>
+                    <label for="age-range" class="block text-lg text-gray-700">Rango de Edad</label>
+                    <select id="age-range" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 transition duration-300" required>
+                        <option value="">Seleccione...</option>
+                        <option value="menor-18">Menor a 18 años</option>
+                        <option value="19-30">19-30 años</option>
+                        <option value="31-45">31-45 años</option>
+                        <option value="46-55">46-55 años</option>
+                        <option value="mayor-56">Mayor a 56 años</option>
+                    </select>
+                </div>
+                <div>
+                    <label><input type="checkbox" id="is-argentinian" class="mr-2"> ¿Eres argentino?</label>
+                </div>
+                <button type="submit" class="w-full py-3 bg-purple-600 text-white rounded-lg shadow-lg hover:bg-purple-500 transition duration-300">Enviar</button>
+            </form>`;
     }
 }
 
