@@ -13,7 +13,7 @@ function showSection(section) {
                     <label for="password" class="block text-lg text-gray-700">Contraseña</label>
                     <input type="password" id="password" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 transition duration-300">
                 </div>
-                <button type="button" onclick="login()" class="w-full py-3 bg-indigo-600 text-white rounded-lg shadow-lg hover:bg-indigo-500 transition duration-300">Entrar</button>
+                <button type="button" onclick="login()" class="w-full py-3 bg-purple-600  text-white rounded-lg shadow-lg hover:bg-indigo-500 transition duration-300">Entrar</button>
             </form>
         `;
     } else if (section === 'discografia') {
@@ -38,35 +38,35 @@ function showSection(section) {
                 <ul class="space-y-4 text-lg text-gray-700">
                     <li class="flex justify-between items-center transition-transform transform hover:scale-105">
                         <span><strong>Buenos Aires, Argentina</strong> - 10 de octubre de 2024</span>
-                        <button class="bg-blue-500 text-white font-semibold px-4 py-2 rounded hover:bg-blue-600 transition duration-300 transform hover:translate-y-1">Comprar</button>
+                        <button class="bg-purple-600  text-white font-semibold px-4 py-2 rounded hover:bg-blue-600 transition duration-300 transform hover:translate-y-1">Comprar</button>
                     </li>
                     <li class="flex justify-between items-center transition-transform transform hover:scale-105">
                         <span><strong>Santiago, Chile</strong> - 12 de octubre de 2024</span>
-                        <button class="bg-blue-500 text-white font-semibold px-4 py-2 rounded hover:bg-blue-600 transition duration-300 transform hover:translate-y-1">Comprar</button>
+                        <button class="bg-purple-600  text-white font-semibold px-4 py-2 rounded hover:bg-blue-600 transition duration-300 transform hover:translate-y-1">Comprar</button>
                     </li>
                     <li class="flex justify-between items-center transition-transform transform hover:scale-105">
                         <span><strong>Lima, Perú</strong> - 14 de octubre de 2024</span>
-                        <button class="bg-blue-500 text-white font-semibold px-4 py-2 rounded hover:bg-blue-600 transition duration-300 transform hover:translate-y-1">Comprar</button>
+                        <button class="bg-purple-600  text-white font-semibold px-4 py-2 rounded hover:bg-blue-600 transition duration-300 transform hover:translate-y-1">Comprar</button>
                     </li>
                     <li class="flex justify-between items-center transition-transform transform hover:scale-105">
                         <span><strong>Ciudad de México, México</strong> - 16 de octubre de 2024</span>
-                        <button class="bg-blue-500 text-white font-semibold px-4 py-2 rounded hover:bg-blue-600 transition duration-300 transform hover:translate-y-1">Comprar</button>
+                        <button class="bg-purple-600  text-white font-semibold px-4 py-2 rounded hover:bg-blue-600 transition duration-300 transform hover:translate-y-1">Comprar</button>
                     </li>
                     <li class="flex justify-between items-center transition-transform transform hover:scale-105">
                         <span><strong>Medellín, Colombia</strong> - 18 de octubre de 2024</span>
-                        <button class="bg-blue-500 text-white font-semibold px-4 py-2 rounded hover:bg-blue-600 transition duration-300 transform hover:translate-y-1">Comprar</button>
+                        <button class="bg-purple-600  text-white font-semibold px-4 py-2 rounded hover:bg-blue-600 transition duration-300 transform hover:translate-y-1">Comprar</button>
                     </li>
                     <li class="flex justify-between items-center transition-transform transform hover:scale-105">
                         <span><strong>Quito, Ecuador</strong> - 20 de octubre de 2024</span>
-                        <button class="bg-blue-500 text-white font-semibold px-4 py-2 rounded hover:bg-blue-600 transition duration-300 transform hover:translate-y-1">Comprar</button>
+                        <button class="bg-purple-600  text-white font-semibold px-4 py-2 rounded hover:bg-blue-600 transition duration-300 transform hover:translate-y-1">Comprar</button>
                     </li>
                     <li class="flex justify-between items-center transition-transform transform hover:scale-105">
                         <span><strong>Asunción, Paraguay</strong> - 22 de octubre de 2024</span>
-                        <button class="bg-blue-500 text-white font-semibold px-4 py-2 rounded hover:bg-blue-600 transition duration-300 transform hover:translate-y-1">Comprar</button>
+                        <button class="bg-purple-600  text-white font-semibold px-4 py-2 rounded hover:bg-blue-600 transition duration-300 transform hover:translate-y-1">Comprar</button>
                     </li>
                     <li class="flex justify-between items-center transition-transform transform hover:scale-105">
                         <span><strong>La Paz, Bolivia</strong> - 24 de octubre de 2024</span>
-                        <button class="bg-blue-500 text-white font-semibold px-4 py-2 rounded hover:bg-blue-600 transition duration-300 transform hover:translate-y-1">Comprar</button>
+                        <button class="bg-purple-600  text-white font-semibold px-4 py-2 rounded hover:bg-blue-600 transition duration-300 transform hover:translate-y-1">Comprar</button>
                     </li>
                 </ul>
             </div>
@@ -83,7 +83,7 @@ function showSection(section) {
                     <label for="release-year" class="block text-lg text-gray-700">Año de Lanzamiento</label>
                     <input type="text" id="release-year" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 transition duration-300">
                 </div>
-                <button type="button" class="w-full py-3 bg-green-600 text-white rounded-lg shadow-lg hover:bg-green-500 transition duration-300" onclick="addAlbum()">Agregar</button>
+                <button type="button" class="w-full py-3 bg-purple-600 text-white rounded-lg shadow-lg hover:bg-green-500 transition duration-300" onclick="addAlbum()">Agregar</button>
             </form>
         `;
 
